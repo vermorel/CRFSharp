@@ -51,9 +51,6 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="AdvUtils">
-          <HintPath>..\..\dll\AdvUtils.dll</HintPath>
-        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Xml.Linq" />
@@ -72,6 +69,10 @@
     <Compile Include="SegDecoderTagger.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\AdvUtils\AdvUtils\AdvUtils.csproj">
+      <Project>{a89c52ed-7910-414d-9f51-f63da11215b9}</Project>
+      <Name>AdvUtils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CRFSharp\CRFSharp.csproj">
       <Project>{A9888D02-572E-45B2-8999-F1202ADDCF03}</Project>
       <Name>CRFSharp</Name>

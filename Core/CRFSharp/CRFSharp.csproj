@@ -52,9 +52,6 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="AdvUtils">
-          <HintPath>..\..\dll\AdvUtils.dll</HintPath>
-        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Xml.Linq" />
@@ -86,6 +83,12 @@
     <Compile Include="encoder\ModelWriter.cs" />
     <Compile Include="encoder\DefaultFeatureLexicalDict.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AdvUtils\AdvUtils\AdvUtils.csproj">
+      <Project>{a89c52ed-7910-414d-9f51-f63da11215b9}</Project>
+      <Name>AdvUtils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

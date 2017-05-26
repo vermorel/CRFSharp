@@ -35,10 +35,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AdvUtils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dll\AdvUtils.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +50,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdvUtils\AdvUtils\AdvUtils.csproj">
+      <Project>{a89c52ed-7910-414d-9f51-f63da11215b9}</Project>
+      <Name>AdvUtils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\CRFSharpWrapper\CRFSharpWrapper.csproj">
       <Project>{ED50CC60-D581-42ED-A608-22F7ED59A75E}</Project>
       <Name>CRFSharpWrapper</Name>
